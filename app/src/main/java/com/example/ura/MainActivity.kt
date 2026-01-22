@@ -62,7 +62,7 @@ fun Counter(modifier: Modifier = Modifier) {
         Text(text = "Posledni jmal: $lastClicked"
             , fontSize = 30.sp,
             color = if (lastClicked == "Jmi davai")
-                Color.Red
+                Color.Black
             else Color.White,
 
             modifier = Modifier
