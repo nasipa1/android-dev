@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Counter(modifier: Modifier = Modifier) {
-    var lastClicked by remember { mutableStateOf("Jmi davai") }
+    var lastClicked by remember { mutableStateOf("Ne jmal") }
     var count1 by remember { mutableStateOf(0) }
     var count2 by remember { mutableStateOf(0) }
     var count3 by remember { mutableStateOf(0) }
@@ -61,13 +61,13 @@ fun Counter(modifier: Modifier = Modifier) {
     ) {
         Text(text = "Posledni jmal: $lastClicked"
             , fontSize = 30.sp,
-            color = if (lastClicked == "Jmi davai")
+            color = if (lastClicked == "Ne jmal")
                 Color.Black
             else Color.White,
 
             modifier = Modifier
                 .padding(16.dp)
-                .background(color = if (lastClicked == "Jmi davai")
+                .background(color = if (lastClicked == "Ne jmal")
                     Color.White
                 else if (lastClicked == "Pobeda")
                     Color.Blue
