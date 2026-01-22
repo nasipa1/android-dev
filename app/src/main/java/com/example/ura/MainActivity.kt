@@ -62,12 +62,12 @@ fun Counter(modifier: Modifier = Modifier) {
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(text = "Count 1: $count1",
-                fontSize = 50.sp,
+                fontSize = 40.sp,
                 color = Color.White,
                 modifier = Modifier
                     .padding(16.dp)
                     .align(Alignment.CenterVertically)
-                    .weight(6f)
+                    .weight(4f)
                     .background(Color.Red)
                     .height(60.dp)
 
@@ -85,12 +85,12 @@ fun Counter(modifier: Modifier = Modifier) {
 
         Row(verticalAlignment = Alignment.CenterVertically, ) {
             Text(text = "Count 2: $count2",
-                fontSize = 50.sp,
+                fontSize = 40.sp,
                 color = Color.White,
                 modifier = Modifier
                     .padding(16.dp)
                     .align(Alignment.CenterVertically)
-                    .weight(6f)
+                    .weight(4f)
                     .background(Color.Magenta)
                     .height(60.dp))
 
@@ -109,12 +109,12 @@ fun Counter(modifier: Modifier = Modifier) {
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(text = "Count 3: $count3",
-                fontSize = 50.sp,
+                fontSize = 40.sp,
                 color = Color.White,
                 modifier = Modifier
                     .padding(16.dp)
                     .align(Alignment.CenterVertically)
-                    .weight(6f)
+                    .weight(4f)
                     .background(Color.Blue)
                     .height(60.dp))
             Button(onClick = {
