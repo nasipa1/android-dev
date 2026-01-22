@@ -51,6 +51,8 @@ fun Counter(modifier: Modifier = Modifier) {
     var count2 by remember { mutableStateOf(0) }
     var count3 by remember { mutableStateOf(0) }
 
+
+
     Column(
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -58,7 +60,25 @@ fun Counter(modifier: Modifier = Modifier) {
 
     ) {
         Text(text = "Posledni jmal: $lastClicked"
-            , fontSize = 30.sp)
+            , fontSize = 30.sp,
+            color = if (lastClicked == "Jmi davai")
+                Color.Red
+            else Color.White,
+
+            modifier = Modifier
+                .padding(16.dp)
+                .background(color = if (lastClicked == "Jmi davai")
+                    Color.White
+                else if (lastClicked == "Pobeda")
+                    Color.Blue
+
+                else if (lastClicked == "Priv")
+                    Color.Red
+                else if (lastClicked == "Kak dela")
+                    Color.Magenta
+                else Color.White
+                )
+        )
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(text = "Count 1: $count1",
