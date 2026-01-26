@@ -103,7 +103,7 @@ fun Carta() {
 
             )
             Text(
-                text = "Nasipa Abdyraiymova",
+                text = "Shrek Samiy Krutooi",
                 fontSize = 30.sp,
                 lineHeight = 40.sp,
                 fontWeight = FontWeight.Bold,
